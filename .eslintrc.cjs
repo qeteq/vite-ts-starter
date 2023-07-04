@@ -10,6 +10,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:react-hooks/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -21,7 +22,7 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: ['@typescript-eslint'],
+    plugins: ['@typescript-eslint', 'react-refresh'],
     rules: {
         '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
         '@typescript-eslint/consistent-type-exports': 'error',
@@ -36,5 +37,6 @@ module.exports = {
 
         '@typescript-eslint/sort-type-constituents': 'warn',
         'no-console': 'warn',
+        'react-refresh/only-export-components': 'warn',
     },
 };
